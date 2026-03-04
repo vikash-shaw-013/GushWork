@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mangalam HDPE Pipes - Premium HDPE Pipes & Coils for Modern Infrastructure. BIS, ISO, CE Certified. 50+ Year Service Life.">
+    <title>Mangalam HDPE Pipes | Premium HDPE Pipes & Coils</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ============================
+         STICKY HEADER (appears on scroll)
+    =============================== -->
+    <header class="sticky-header" id="stickyHeader">
+        <div class="container sticky-header__inner">
+            <a href="#" class="sticky-header__logo">
+                <span class="logo-text-mangalam">Mangalam</span>
+                <span class="logo-sub-pipes">HDPE | PIPES</span>
+            </a>
+            <nav class="sticky-header__nav" aria-label="Sticky navigation">
+                <a href="#hero">About Us</a>
+                <a href="#specifications">Products</a>
+                <a href="#features">Features</a>
+                <a href="#applications">Applications</a>
+            </nav>
+            <a href="#contact" class="btn btn--dark btn--sm">Contact Us</a>
+            <!-- Mobile hamburger menu -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile nav menu -->
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <a href="#hero">About Us</a>
+            <a href="#specifications">Products</a>
+            <a href="#features">Features</a>
+            <a href="#applications">Applications</a>
+            <a href="#contact" class="btn btn--dark">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- ============================
+         MAIN NAVIGATION
+    =============================== -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container main-nav__inner">
+            <a href="#" class="main-nav__logo">
+                <span class="logo-text-mangalam">Mangalam</span>
+                <span class="logo-sub-pipes">HDPE | PIPES</span>
+            </a>
+            <div class="main-nav__links">
+                <a href="#">About Us</a>
+                <a href="#" class="active">Products <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M3 5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+            </div>
+            <a href="#contact" class="btn btn--dark btn--nav">Contact Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============================
+             HERO / PRODUCT SECTION
+        =============================== -->
+        <section class="hero" id="hero">
+            <div class="container hero__inner">
+                <!-- Left: Image Carousel (matches Figma: image is on LEFT) -->
+                <div class="hero__carousel">
+                    <!-- Main Image with Zoom -->
+                    <div class="carousel" id="mainCarousel">
+                        <div class="carousel__main" id="carouselMain">
+                            <img src="images/carousel-1.png" alt="HDPE pipe installation" id="carouselMainImg"
+                                class="carousel__main-img">
+                            <!-- Zoom lens overlay (shown on hover) -->
+                            <div class="zoom-lens" id="zoomLens"></div>
+                            <!-- Navigation Arrows -->
+                            <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev"
+                                aria-label="Previous image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="carousel__arrow carousel__arrow--next" id="carouselNext"
+                                aria-label="Next image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Zoom Preview Window (appears on hover) -->
+                        <div class="zoom-preview" id="zoomPreview">
+                            <img src="images/carousel-1.png" alt="Zoomed view" id="zoomPreviewImg">
+                        </div>
+                    </div>
+
+                    <!-- Thumbnail Strip -->
+                    <div class="carousel__thumbs" id="carouselThumbs">
+                        <button class="carousel__thumb active" data-index="0">
+                            <img src="images/carousel-1.png" alt="Thumbnail 1">
+                        </button>
+                        <button class="carousel__thumb" data-index="1">
+                            <img src="images/carousel-2.png" alt="Thumbnail 2">
+                        </button>
+                        <button class="carousel__thumb" data-index="2">
+                            <img src="images/carousel-3.png" alt="Thumbnail 3">
+                        </button>
+                        <button class="carousel__thumb" data-index="3">
+                            <img src="images/carousel-4.png" alt="Thumbnail 4">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Product Info (matches Figma: text is on RIGHT) -->
+                <div class="hero__info">
+                    <!-- Breadcrumb -->
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <a href="#">Products</a>
+                        <span class="breadcrumb__sep">&gt;</span>
+                        <span>HDPE Pipes</span>
+                    </nav>
+
+                    <!-- Certifications -->
+                    <div class="certifications">
+                        <span class="cert-badge">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"
+                                    fill="#C62828" />
+                                <path d="M10 15.5l-3.5-3.5 1.41-1.41L10 12.67l5.59-5.59L17 8.5l-7 7z" fill="#fff" />
+                            </svg>
+                            BIS Certified
+                        </span>
+                        <span class="cert-badge">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="3" fill="#1565C0" />
+                                <path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="1.5" />
+                            </svg>
+                            ISO Certified
+                        </span>
+                        <span class="cert-badge">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="6" width="20" height="12" rx="2" fill="#37474F" /><text x="12" y="15"
+                                    text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">CE</text>
+                            </svg>
+                            CE Certified
+                        </span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero__title">Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
+
+                    <!-- Feature List -->
+                    <ul class="hero__features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#2563EB" />
+                                <path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Leak-Proof Fusion Joints
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#2563EB" />
+                                <path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Chemical Resistance
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#2563EB" />
+                                <path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            50+ Year Service Life
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#2563EB" />
+                                <path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Flexible Installation
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#2563EB" />
+                                <path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Corrosion Free
+                        </li>
+                    </ul>
+
+                    <!-- Price Range & Shipping Info -->
+                    <div class="price-info">
+                        <div class="price-info__card">
+                            <span class="price-info__label">Price Range</span>
+                            <span class="price-info__value">₹4,80,000 - 7,90,000</span>
+                            <div class="price-info__tags">
+                                <span class="tag tag--shipping">Shipping: 6-12 days</span>
+                                <span class="tag tag--returns">Returns: If returned within 7 days</span>
+                            </div>
+                            <span class="price-info__cert">Certifications: ISO Certified, BIS Certified</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons (Figma mobile visible, desktop hero) -->
+                    <div class="hero__cta-buttons">
+                        <a href="#contact" class="btn btn--primary btn--lg">Get Custom Quote</a>
+                        <a href="#specifications" class="btn btn--outline-dark btn--lg">View Tech Specs
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             TRUSTED BY COMPANIES
+        =============================== -->
+        <section class="trusted">
+            <div class="container">
+                <p class="trusted__title">Trusted by Hundreds of Companies Globally</p>
+                <div class="trusted__logos">
+                    <div class="trusted__logo-item">
+                        <span class="trusted__logo-text">EUR<span class="trusted__logo-accent">O</span>FLEX</span>
+                        <span class="trusted__logo-sub">WE CREATE SOLUTIONS</span>
+                    </div>
+                    <div class="trusted__logo-item">
+                        <span class="trusted__logo-text">EUR<span class="trusted__logo-accent">O</span>FLEX</span>
+                        <span class="trusted__logo-sub">WE CREATE SOLUTIONS</span>
+                    </div>
+                    <div class="trusted__logo-item">
+                        <span class="trusted__logo-text">EUR<span class="trusted__logo-accent">O</span>FLEX</span>
+                        <span class="trusted__logo-sub">WE CREATE SOLUTIONS</span>
+                    </div>
+                    <div class="trusted__logo-item">
+                        <span class="trusted__logo-text">EUR<span class="trusted__logo-accent">O</span>FLEX</span>
+                        <span class="trusted__logo-sub">WE CREATE SOLUTIONS</span>
+                    </div>
+                    <div class="trusted__logo-item">
+                        <span class="trusted__logo-text">EUR<span class="trusted__logo-accent">O</span>FLEX</span>
+                        <span class="trusted__logo-sub">WE CREATE SOLUTIONS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             TECHNICAL SPECIFICATIONS
+        =============================== -->
+        <section class="specifications" id="specifications">
+            <div class="container">
+                <h2 class="section-title section-title--light">Technical Specifications at a Glance</h2>
+                <p class="section-subtitle">Comprehensive performance data demonstrating our commitment to quality and
+                    engineering excellence.</p>
+                <div class="specs-table-wrapper">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>PARAMETER</th>
+                                <th>SPECIFICATION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pipe Diameter Range</td>
+                                <td>20mm to 1600mm (3/4" to 63")</td>
+                            </tr>
+                            <tr>
+                                <td>Pressure Ratings</td>
+                                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Dimension Ratio</td>
+                                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+                            </tr>
+                            <tr>
+                                <td>Material Grades</td>
+                                <td>PE 63, PE 80, PE 100</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Temperature</td>
+                                <td>-40°C to +80°C (-40°F to +176°F)</td>
+                            </tr>
+                            <tr>
+                                <td>Color Options</td>
+                                <td>Black with Blue Strips, Black</td>
+                            </tr>
+                            <tr>
+                                <td>Expected Service Life</td>
+                                <td>50+ Years (at 20°C, PN 10)</td>
+                            </tr>
+                            <tr>
+                                <td>Material Density</td>
+                                <td>0.95 - 0.96 g/cm³</td>
+                            </tr>
+                            <tr>
+                                <td>Certification Standards</td>
+                                <td>IS 5984, ISO 4427, ASTM D3035</td>
+                            </tr>
+                            <tr>
+                                <td>Joint Type</td>
+                                <td>Butt Fusion, Electrofusion, Mechanical</td>
+                            </tr>
+                            <tr>
+                                <td>Coil Lengths</td>
+                                <td>Up to 500mm (for smaller diameters)</td>
+                            </tr>
+                            <tr>
+                                <td>Country of Origin</td>
+                                <td><span class="flag">🇮🇳</span> India</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="#" class="btn btn--outline btn--download">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Download Full Technical Datasheet
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================
+             FEATURES / QUALITY ASSURANCE
+        =============================== -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="section-title section-title--light">Built to Last. Engineered to Perform.</h2>
+                <p class="section-subtitle">From bulk bags to technical threads, Meera delivers precision solutions for
+                    every stage of your packaging process.</p>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#3B82F6"
+                                    stroke-width="1.5" />
+                                <path d="M9 12l2 2 4-4" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Superior Chemical Resistance</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#3B82F6" stroke-width="1.5" />
+                                <path d="M8 12h8M12 8v8" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Exceptional Flexibility & Durability</h3>
+                        <p>High impact resistance and flexibility allow easy installation in challenging terrains and
+                            conditions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="9" stroke="#3B82F6" stroke-width="1.5" />
+                                <path d="M12 3a9 9 0 019 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="3" fill="#3B82F6" />
+                            </svg>
+                        </div>
+                        <h3>Leak-Proof Fusion Welding</h3>
+                        <p>Butt fusion and electrofusion jointing creates permanent, leak-proof connections with zero
+                            maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             CTA EMAIL CATALOGUE BANNER
+        =============================== -->
+        <section class="cta-banner" id="contact">
+            <div class="container cta-banner__inner">
+                <div class="cta-banner__content">
+                    <h2>Want us to email the entire catalogue?</h2>
+                    <p>Enter your email and an expert will share the catalogue with you.</p>
+                </div>
+                <form class="cta-banner__form" id="ctaForm" onsubmit="return false;">
+                    <label for="emailInput" class="sr-only">Email Address</label>
+                    <input type="email" id="emailInput" class="cta-banner__input" placeholder="Email Address" required>
+                    <button type="submit" class="btn btn--primary btn--lg">Request Catalogue</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ============================
+             APPLICATIONS CAROUSEL
+        =============================== -->
+        <section class="applications" id="applications">
+            <div class="container">
+                <div class="applications__header">
+                    <div>
+                        <h2 class="section-title">Versatile Applications Across Industries</h2>
+                        <p class="section-subtitle--dark">From technical textiles to packaging materials, our
+                            precision-engineered machinery delivers superior performance across diverse applications.
+                        </p>
+                    </div>
+                    <div class="applications__nav">
+                        <button class="carousel-btn" id="appPrev" aria-label="Previous application">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="carousel-btn" id="appNext" aria-label="Next application">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="applications__carousel" id="appCarousel">
+                    <div class="app-card">
+                        <img src="images/app-water.png" alt="Water Supply" loading="lazy">
+                        <div class="app-card__overlay">
+                            <h3>Water Supply</h3>
+                            <p>Municipal & residential water distribution systems</p>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <img src="images/app-irrigation.png" alt="Irrigation" loading="lazy">
+                        <div class="app-card__overlay">
+                            <h3>Irrigation</h3>
+                            <p>Agricultural drip & sprinkler irrigation networks</p>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <img src="images/app-industrial.png" alt="Industrial" loading="lazy">
+                        <div class="app-card__overlay">
+                            <h3>Industrial</h3>
+                            <p>Chemical transfer & industrial process piping</p>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <img src="images/app-gas.png" alt="Gas Distribution" loading="lazy">
+                        <div class="app-card__overlay">
+                            <h3>Gas Distribution</h3>
+                            <p>Natural gas pipeline infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             MANUFACTURING PROCESS
+        =============================== -->
+        <section class="process" id="process">
+            <div class="container">
+                <h2 class="section-title section-title--light">Advanced HDPE Pipe Manufacturing Process</h2>
+                <p class="section-subtitle">Our 8-step manufacturing process ensures consistent quality in every meter
+                    of pipe produced.</p>
+                <div class="process__timeline">
+                    <div class="process__step">
+                        <div class="process__number">01</div>
+                        <h3>Raw Material Selection</h3>
+                        <p>Premium PE resin sourced from certified global suppliers</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">02</div>
+                        <h3>Material Testing</h3>
+                        <p>Rigorous quality checks on incoming raw materials</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">03</div>
+                        <h3>Extrusion</h3>
+                        <p>State-of-the-art single-screw extrusion technology</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">04</div>
+                        <h3>Vacuum Sizing</h3>
+                        <p>Precision diameter control with vacuum calibration</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">05</div>
+                        <h3>Cooling</h3>
+                        <p>Multi-stage spray cooling for uniform wall thickness</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">06</div>
+                        <h3>Marking & Printing</h3>
+                        <p>Permanent laser marking with batch identification</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">07</div>
+                        <h3>Quality Control</h3>
+                        <p>Automated dimensional and pressure testing</p>
+                    </div>
+                    <div class="process__step">
+                        <div class="process__number">08</div>
+                        <h3>Packaging & Dispatch</h3>
+                        <p>Safe bundling and on-time delivery nationwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             TESTIMONIAL
+        =============================== -->
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__carousel">
+                    <blockquote class="testimonial__card">
+                        <p>"The durability and performance of Meera's fishnet processing equipment has significantly
+                            improved our marine product quality. Excellent support for specialized applications."</p>
+                        <footer class="testimonial__author">
+                            <div class="testimonial__avatar"></div>
+                            <cite>
+                                <strong>Carlos Mendoza</strong>
+                                <span>Operations Manager</span>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="testimonial__card">
+                        <p>"Revolutionized our FIBC production efficiency! The Mangalam HDPE pipes exceeded our
+                            expectations with their durability and precision engineering."</p>
+                        <footer class="testimonial__author">
+                            <div class="testimonial__avatar"></div>
+                            <cite>
+                                <strong>Rajesh Kumar</strong>
+                                <span>Manufacturing Head</span>
+                            </cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             PORTFOLIO SECTION
+        =============================== -->
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Complete Piping Solutions Portfolio</h2>
+                <p class="portfolio__desc">From HDPE straight pipes to flexible coils and precision fittings, we deliver
+                    complete piping solutions for modern infrastructure projects.</p>
+                <div class="portfolio__grid">
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img"></div>
+                        <h3>PE-RT Heating Pipes</h3>
+                        <p>Polyethylene of Raised Temperature resistance pipes ideal for underfloor heating</p>
+                    </div>
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img"></div>
+                        <h3>HDPE Coils</h3>
+                        <p>Flexible coiled pipes for irrigation and water supply systems</p>
+                    </div>
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img"></div>
+                        <h3>Pipe Accessories</h3>
+                        <p>Complete range of fittings, valves, and connection services</p>
+                    </div>
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img"></div>
+                        <h3>HDPE Fittings</h3>
+                        <p>Butt fusion, electrofusion, and mechanical fittings for all pipe sizes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================
+         FOOTER
+    =============================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">
+                    <span class="logo-text-mangalam logo-text-mangalam--white">Mangalam</span>
+                    <span class="logo-sub-pipes logo-sub-pipes--light">HDPE | PIPES</span>
+                </a>
+                <p>India's leading manufacturer of premium HDPE pipes and coils for modern infrastructure.</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h4>Products</h4>
+                    <a href="#">HDPE Pipes</a>
+                    <a href="#">HDPE Coils</a>
+                    <a href="#">Fittings</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Infrastructure</a>
+                    <a href="#">Quality</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Support</h4>
+                    <a href="#">Technical Help</a>
+                    <a href="#">Downloads</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2025 Mangalam HDPE Pipes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================
+         CATALOGUE MODAL
+    =============================== -->
+    <div class="modal" id="catalogueModal">
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+            <h3>Request a call back</h3>
+            <form id="modalForm" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="modalName">Full Name</label>
+                    <input type="text" id="modalName" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalCompany">Company Name</label>
+                    <input type="text" id="modalCompany" placeholder="Your company">
+                </div>
+                <div class="form-group">
+                    <label for="modalEmail">Email Address</label>
+                    <input type="email" id="modalEmail" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone Number</label>
+                    <div class="form-group__phone">
+                        <span class="form-group__country-code">+91</span>
+                        <input type="tel" id="modalPhone" placeholder="7003026616">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Form</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
